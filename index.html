@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Curiosity Explorer</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Curiosify</h1>
+      <p class="subtitle">Discover random facts!</p>
+
+      <section class="fact-card">
+        <div class="status" id="status"></div>
+        <p class="fact-text" id="factText">Click “Get Random Fact” to start.</p>
+        <div class="fact-meta" id="factMeta"></div>
+      </section>
+
+      <div class="controls">
+        <button id="randomBtn">Get Random Fact</button>
+        <button id="translateBtn" class="secondary" disabled>
+          Translate to Turkish
+        </button>
+        <button id="saveBtn" class="secondary" disabled>
+          Save to Favorites
+        </button>
+        <button id="copyBtn" class="secondary" disabled>Copy Fact</button>
+      </div>
+
+      <section class="favorites">
+        <h2>Favorites</h2>
+        <ul class="favorites-list" id="favoritesList"></ul>
+        <p class="empty-text" id="emptyText">No saved facts yet.</p>
+      </section>
+    </main>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
